@@ -8,7 +8,8 @@
       </a>
       <div class="mt-8 bg-white overflow-hidden shadow sm:rounded-lg p-6">
         <p>{{ $store.state.message }}</p>
-        <button v-on:click="$store.commit('updateMessage')">Update</button>
+        <!-- <button v-on:click="$store.commit('updateMessage')">Update</button> -->
+        <button v-on:click="$store.commit('updateMessage', 'Commit with payload')">Update</button>
       </div>
     </div>
   </div>
